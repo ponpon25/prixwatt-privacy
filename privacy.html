@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrixWatt - Politique de Confidentialité</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #1d1d1f; background: #f5f5f7; }
+        h1 { font-size: 28px; font-weight: 600; margin-bottom: 10px; color: #1d1d1f; }
+        h2 { font-size: 22px; font-weight: 600; margin-top: 30px; margin-bottom: 15px; color: #1d1d1f; }
+        .date { color: #86868b; font-size: 14px; margin-bottom: 30px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .highlight { background: #e8f4fd; padding: 15px; border-radius: 8px; border-left: 4px solid #007aff; margin: 20px 0; }
+        footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #d2d2d7; font-size: 14px; color: #86868b; }
+        @media (max-width: 600px) { body { padding: 15px; } h1 { font-size: 24px; } }
+    </style>
+</head>
+<body>
+    <h1>PrixWatt</h1>
+    <p class="date">Dernière mise à jour : 30 décembre 2025</p>
+    
+    <div class="highlight">
+        <strong>Aucune donnée personnelle n'est collectée, vendue ou partagée.</strong><br>
+        PrixWatt respecte pleinement le RGPD et les exigences App Store.
+    </div>
+
+    <h2>1. Données collectées</h2>
+    <p>Pour le bon fonctionnement de l'app, nous collectons <strong>uniquement</strong> :</p>
+    <ul>
+        <li><strong>Données d'utilisation anonymes</strong> : Interactions avec le calculateur (clics, saisies) - stockées localement</li>
+        <li><strong>Contenu utilisateur anonyme</strong> : Prix abonnement + consommation annuelle (chiffres uniquement) - stockées localement</li>
+        <li><strong>Données publiques</strong> : Tarifs électricité du Médiateur national de l'énergie (scraping légal quotidien)</li>
+    </ul>
+
+    <h2>2. Aucune identification</h2>
+    <ul>
+        <li>✅ <strong>Pas d'email, nom, téléphone</strong></li>
+        <li>✅ <strong>Pas d'identifiant appareil</strong> (IDFA, UUID)</li>
+        <li>✅ <strong>Pas de localisation</strong></li>
+        <li>✅ <strong>Toutes données anonymes par design</strong></li>
+    </ul>
+
+    <h2>3. Services utilisés</h2>
+    <ul>
+        <li><strong>Cloudflare R2</strong> : Stockage JSON tarifs publics (anonymes)</li>
+        <li><strong>GitHub Actions</strong> : Script scraping automatique quotidien</li>
+        <li><strong>Apple Push Notifications</strong> : Alertes prix plancher (gérées par iOS)</li>
+        <li><strong>StoreKit</strong> : Achat unique 0,99€ (non-consommable, géré par Apple)</li>
+    </ul>
+
+    <h2>4. Pas de suivi ni publicité</h2>
+    <ul>
+        <li>❌ <strong>Aucune analyse</strong> (Firebase, Google Analytics, etc.)</li>
+        <li>❌ <strong>Aucune publicité</strong></li>
+        <li>❌ <strong>Aucun partage tiers</strong></li>
+        <li>❌ <strong>Aucun tracking cross-app</strong></li>
+    </ul>
+
+    <h2>5. Données publiques Médiateur</h2>
+    <p>Les tarifs électricité proviennent du site officiel du <a href="https://www.energie-mediateur.fr">Médiateur national de l'énergie</a>. Ce sont des données publiques françaises destinées à la transparence tarifaire. Scraping légal et éthique (fréquence quotidienne limitée).</p>
+
+    <h2>6. Achats intégrés</h2>
+    <p>L'achat unique 0,99€ (non-consommable) débloque définitivement le calculateur d'économies + alertes push. Transaction 100% gérée par Apple StoreKit - aucune donnée financière collectée.</p>
+
+    <h2>7. Vos droits RGPD</h2>
+    <ul>
+        <li><strong>Suppression</strong> : Désinstaller l'app = suppression immédiate (données locales)</li>
+        <li><strong>Accès</strong> : Aucune donnée identifiable à fournir</li>
+        <li><strong>Opposition</strong> : Pas de traitement automatisé</li>
+    </ul>
+
+    <h2>8. Contact</h2>
+    <p>Questions ? <a href="mailto:contact@prixwatt.app">contact@prixwatt.app</a></p>
+
+    <p><em>Développé en France 🇫🇷 par [Votre Nom] pour les consommateurs français.</em></p>
+
+    <footer>
+        © 2025 PrixWatt. Tous droits réservés. | <a href="https://ponpon25.github.io/prixwatt-privacy/">Version anglaise</a>
+    </footer>
+</body>
+</html>
